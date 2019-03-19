@@ -37,6 +37,10 @@
             });
         }, false);
     })();
+
+    $(document).ready(function() {
+        $('#telefone').mask('(00) 0000-0000#');
+    });
     </script>
 
 </head>
@@ -61,10 +65,12 @@
                         Discipulado
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Cadastro de Pessoa</a>
-                        <a class="dropdown-item" href="#">Lista de chamada</a>
+                        <a class="dropdown-item" href="#">Cadastrar aluno</a>
+                        <a class="dropdown-item" href="#">Registrar Presenças</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Controle</a>
+                        <a class="dropdown-item" href="#">Apurar Resultados</a>
+                        <a class="dropdown-item" href="#">Exportar Planilha</a>
+
                     </div>
                 </li>
 
@@ -127,9 +133,6 @@
             </form>
         </div>
     </div>
-
-
-
 
 
 </body>
