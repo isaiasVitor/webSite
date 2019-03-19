@@ -41,7 +41,7 @@
 
 </head>
 
-<body style="background:grey">
+<body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
@@ -75,8 +75,6 @@
    
   </div>
 </nav>
-
-
     <div class="card">
         <div class="card-header">
             Formulario cadastro para Discipulado ADBA
