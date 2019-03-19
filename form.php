@@ -51,7 +51,7 @@
             }
         };
 
-    $('.sp_celphones').mask(SPMaskBehavior, spOptions);
+    $('.telefone').mask(SPMaskBehavior, spOptions);
     </script>
 
 </head>
