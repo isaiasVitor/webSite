@@ -42,7 +42,7 @@
 </head>
 
 <body>
-    <form class="needs-validation" novalidate padding>
+    <form class="needs-validation" novalidate style="padding:10px;">
         <div class="form-row">
             <div class="col-md-4 mb-3">
                 <label for="validationCustom01">First name</label>
