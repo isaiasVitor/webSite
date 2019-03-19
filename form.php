@@ -25,13 +25,13 @@
 
 <body>
     <form action="?action=save" name="meuForm" method="post">
-        Nome: <input type="text" name="CAMPO_NOME">
-        <br>idade: <input type="text" name="CAMPO_IDADE">
-        <br>E-mail: <input type="email" name="CAMPO_IDADE">
-        <br>Sexo: <input type=radio name="CAMPO_SEXO" value="M">Masculino
+        Nome: <input type="text" name="CAMPO_NOME" required>
+        <br>idade: <input type="text" name="CAMPO_IDADE" required>
+        <br>E-mail: <input type="email" name="CAMPO_IDADE" required>
+        <br>Sexo: <input type=radio name="CAMPO_SEXO" value="M" >Masculino
         <input type=radio name="CAMPO_SEXO" value="F">Feminino
 
-        <br>Curso: <select name="CAMPO_CURSO">
+        <br>Curso: <select name="CAMPO_CURSO" required>
             <option selected value="Selecione..."></option>
             <option value="Ciência da Computação"></option>
             <option value="Bacharelado em Informática"></option>
