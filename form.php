@@ -42,26 +42,19 @@
 </head>
 
 <body>
-    <form class="needs-validation" novalidate style="padding:10px;">
+
+<div class="card">
+  <div class="card-header">
+    Formulario cadastro para Discipulado ADBA
+  </div>
+  <div class="card-body">
+  <form class="needs-validation" novalidate style="padding:10px;">
         <div class="form-row">
             <div class="col-md-4 mb-3">
-                <label for="validationCustom01">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
+                <label for="name">Nome Completo</label>
+                <input type="text" class="form-control" id="name" placeholder="Nome Completo" required>
                 <div class="invalid-feedback">
-                    Prease provide a valid First Name
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationCustom02">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-                <div class="invalid-feedback">
-                    Prease provide a valid Last Name
+                    Por favor digite um nome valido
                 </div>
             </div>
             <div class="col-md-4 mb-3">
@@ -117,6 +110,11 @@
         </div>
         <button class="btn btn-primary" type="submit">Submit form</button>
     </form>
+  </div>
+</div>
+
+
+    
 
 
 </body>
