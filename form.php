@@ -42,16 +42,16 @@
     </script>
 
     <script type="text/javascript">
-    var SPMaskBehavior = function(val) {
+    var maskBehavior = function(val) {
             return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
         },
-        spOptions = {
+        options = {
             onKeyPress: function(val, e, field, options) {
-                field.mask(SPMaskBehavior.apply({}, arguments), options);
+                field.mask(maskBehavior.apply({}, arguments), options);
             }
         };
 
-    $('.sp_celphones').mask(SPMaskBehavior, spOptions);
+    $('.telefone').mask(maskBehavior, options);
     </script>
 
 </head>
@@ -106,9 +106,9 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
-                        <label for="sp_celphones">Telefone</label>
-                        <input type="text" class="sp_celphones" id="sp_celphones"
-                             placeholder="(xx) xxxxx-xxxx" required>
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control telefone" id="telefone"
+                            placeholder="(xx) xxxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
