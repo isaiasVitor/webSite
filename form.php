@@ -18,48 +18,97 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>EXEMPLO - Formulário</title>
-    <script language="JavaScript">
-    function validaForm() {
-
-        var tamanho_nome = document.forms["meuForm"].CAMPO_NOME.value.length;
-
-        if (tamanho_nome < 1 || tamanho_nome > 64) {
-            alert("O campo 'Nome' deve ter entre 2 e 64 caracteres.");
-            return false;
-        } else {
-            alert("OK...");
-            return true;
+    <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
         }
-    }
-    </script>
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 
 </head>
 
 <body>
-    <form action="?action=save" name="meuForm" method="post">
-        Nome: <input type="text" name="CAMPO_NOME" required>
-        <br>idade: <input type="text" name="CAMPO_IDADE" required>
-        <br>E-mail: <input type="email" name="CAMPO_IDADE" required>
-        <br>Sexo: <input type=radio name="CAMPO_SEXO" value="M">Masculino
-        <input type=radio name="CAMPO_SEXO" value="F">Feminino
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustomUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">City</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">State</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">Zip</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
 
-        <br>Curso: <select name="CAMPO_CURSO" required>
-            <option selected value="Selecione..."></option>
-            <option value="Ciência da Computação"></option>
-            <option value="Bacharelado em Informática"></option>
-            <option value="Engenharia da COmputação"></option>
-        </select>
 
-        <br>Conhecimentos:
-        <input type="CHECKBOX" nome="CAMPO_CONHECIMENTOS[]" value="Word">Microsoft Word
-        <input type="CHECKBOX" nome="CAMPO_CONHECIMENTOS[]" value="HTML">HTML
-        <input type="CHECKBOX" nome="CAMPO_CONHECIMENTOS[]" value="JS">JavaScript
-        <input type="CHECKBOX" nome="CAMPO_CONHECIMENTOS[]" value="PHP">PHP
-
-        <br>
-        <input type="reset" value="Limpar">
-        <input type="button" onClick="validaForm()" value="Salvar">
-    </form>
 </body>
 
 </html>
