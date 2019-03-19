@@ -8,6 +8,11 @@
     <title>EXEMPLO - Formulário</title>
     <script language="JavaScript">
     function validaForm() {
+        var tamanho_nome = document.forms["meuForm"].CAMPO_NOME.value.length;
+        if(tamanho_nome < 1 || tamanho_nome > 64){
+            alert("O campo 'Nome' deve ter entre 2 e 64 caracteres.");
+            return false;
+        }
         return true;
     }
     </script>
