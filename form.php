@@ -50,12 +50,18 @@
                 <div class="valid-feedback">
                     Looks good!
                 </div>
+                <div class="invalid-feedback">
+                    Prease provide a valid First Name
+                </div>
             </div>
             <div class="col-md-4 mb-3">
                 <label for="validationCustom02">Last name</label>
                 <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
                 <div class="valid-feedback">
                     Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Prease provide a valid Last Name
                 </div>
             </div>
             <div class="col-md-4 mb-3">
@@ -66,6 +72,9 @@
                     </div>
                     <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username"
                         aria-describedby="inputGroupPrepend" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
                     <div class="invalid-feedback">
                         Please choose a username.
                     </div>
