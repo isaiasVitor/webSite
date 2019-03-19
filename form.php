@@ -42,16 +42,20 @@
     </script>
 
     <script type="text/javascript">
-    var maskBehavior = function(val) {
-            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
-        },
-        options = {
-            onKeyPress: function(val, e, field, options) {
-                field.mask(maskBehavior.apply({}, arguments), options);
-            }
-        };
-
-    $('.telefone').mask(maskBehavior, options);
+    jQuery("input.telefone")
+        .mask("(99) 9999-9999?9")
+        .focusout(function (event) {  
+            var target, phone, element;  
+            target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
+            phone = target.value.replace(/\D/g, '');
+            element = $(target);  
+            element.unmask();  
+            if(phone.length > 10) {  
+                element.mask("(99) 99999-999?9");  
+            } else {  
+                element.mask("(99) 9999-9999?9");  
+            }  
+        });
     </script>
 
 </head>
@@ -107,7 +111,7 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control telefone" id="telefone"
+                        <input type="text" class="form-control telefone" name="telefone" id="telefone"
                             placeholder="(xx) xxxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
