@@ -8,21 +8,23 @@
     <title>EXEMPLO - Formulário</title>
     <script language="JavaScript">
     function validaForm() {
+        
         var tamanho_nome = document.forms["meuForm"].CAMPO_NOME.value.length;
-        if(tamanho_nome < 1 || tamanho_nome > 64){
+            
+        if (tamanho_nome < 1 || tamanho_nome > 64) {
             alert("O campo 'Nome' deve ter entre 2 e 64 caracteres.");
             return false;
-	}else{
-	       alert("OK...");	
-		return true;
-	}
+        } else {
+            alert("OK...");
+            return true;
+        }
     }
     </script>
 
 </head>
 
 <body>
-    <form action="?action=save" namee="meuForm" method="post">
+    <form action="?action=save" name="meuForm" method="post">
         Nome: <input type="text" name="CAMPO_NOME">
         <br>idade: <input type="text" name="CAMPO_IDADE">
         <br>E-mail: <input type="email" name="CAMPO_IDADE">
