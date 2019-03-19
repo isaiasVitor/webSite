@@ -98,14 +98,16 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <label class="col-md-4 mb-3" for="congregação">Selecione a Congregação</label>
-                    <select class="custom-select my-1 mr-sm-2" id="congregação">
-                        <option selected>Choose...</option>
-                        <option value="Sede">Sede</option>
-                        <option value="Pq. São Paulo">Pq. São Paulo</option>
-                        <option value="Jd. Europa">Jd. Europa</option>
-                        <option value="Jd. Portugal">Jd. Portugal</option>
-                    </select>
+                    <div class="col-md-4 mb-3">
+                        <label for="congregação">Selecione a Congregação</label>
+                        <select class="custom-select my-1 mr-sm-2" id="congregação">
+                            <option selected>Choose...</option>
+                            <option value="Sede">Sede</option>
+                            <option value="Pq. São Paulo">Pq. São Paulo</option>
+                            <option value="Jd. Europa">Jd. Europa</option>
+                            <option value="Jd. Portugal">Jd. Portugal</option>
+                        </select>
+                    </div>
                 </div>
 
 
