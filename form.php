@@ -40,20 +40,23 @@
         }, false);
     })();
 
-    jQuery("input.telefone")
-        .mask("(99) 9999-99999")
-        .focusout(function (event) {  
-            var target, phone, element;  
-            target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
-            phone = target.value.replace(/\D/g, '');
-            element = $(target);  
-            element.unmask();  
-            if(phone.length > 10) {  
-                element.mask("(99) 99999-9999");  
-            } else {  
-                element.mask("(99) 9999-99999");  
-            }  
-        });
+    jQuery(function($) {
+	$.mask.definitions['~']='[+-]';
+	//Inicio Mascara Telefone
+	$('input[type=tel]').focusout(function(){
+		var phone, element;
+		element = $(this);
+		element.unmask();
+		phone = element.val().replace(/\D/g, '');
+		if(phone.length > 10) {
+			element.mask("(99) 99999-999?9");
+		} else {
+			element.mask("(99) 9999-9999?9");
+		}
+	}).trigger('focusout');
+	//Fim Mascara Telefone
+	
+});
     </script>
 
 
