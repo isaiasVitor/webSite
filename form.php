@@ -68,29 +68,32 @@
                         </div>
                     </div>
                 </div>
-                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
-                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                    <option selected>Choose...</option>
-                    <option value="Sede">Sede</option>
-                    <option value="Pq. São Paulo">Pq. São Paulo</option>
-                    <option value="Jd. Europa">Jd. Europa</option>
-                    <option value="Jd. Portugal">Jd. Portugal</option>
-                </select>
-
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                            Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                            You must agree before submitting.
-                        </div>
-                    </div>
+                <div class="form-row">
+                    <label class="my-1 mr-2" for="congregação">Selecione a Congregação</label>
+                    <select class="custom-select my-1 mr-sm-2" id="congregação">
+                        <option selected>Choose...</option>
+                        <option value="Sede">Sede</option>
+                        <option value="Pq. São Paulo">Pq. São Paulo</option>
+                        <option value="Jd. Europa">Jd. Europa</option>
+                        <option value="Jd. Portugal">Jd. Portugal</option>
+                    </select>
                 </div>
-                <button class="btn btn-primary" type="submit">Submit form</button>
-            </form>
         </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+    </div>
     </div>
 
 
