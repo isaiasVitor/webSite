@@ -92,8 +92,8 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control" id="telefone"
-                            placeholder="(xx)x xxxx-xxxx/(xx)xxxx-xxxx" required>
+                        <input type="text" class="form-control" id="telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"
+                            placeholder="(xx)x xxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
