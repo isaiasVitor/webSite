@@ -107,8 +107,8 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="sp_celphones">Telefone</label>
-                        <input type="text" class="form-control sp_celphones" id="sp_celphones"
-                             placeholder="(xx)x xxxx-xxxx" required>
+                        <input type="text" class="sp_celphones" id="sp_celphones"
+                             placeholder="(xx) xxxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
