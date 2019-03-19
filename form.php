@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EXEMPLO - Formulário</title>
+    <script language="JavaScript">
+    function validaForm() {
+        return true;
+    }
+    </script>
+
 </head>
 
 <body>
@@ -31,7 +37,7 @@
 
         <br>
         <input type="reset" value="Limpar">
-        <input type="submit" value="Salvar">
+        <input type="submit" onClick="validaForm();" value="Salvar">
     </form>
 </body>
 
