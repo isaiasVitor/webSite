@@ -39,9 +39,7 @@
             });
         }, false);
     })();
-    </script>
 
-    <script type="text/javascript">
     jQuery("input.telefone")
         .mask("(99) 9999-9999?9")
         .focusout(function (event) {  
@@ -57,6 +55,7 @@
             }  
         });
     </script>
+
 
 </head>
 
