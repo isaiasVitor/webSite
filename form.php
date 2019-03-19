@@ -12,7 +12,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     
-    <script type="text/javascript" src="jquery.mask.min.js"></script>
+    <script type="text/javascript" src="jQuery-Mask-Plugin/src/jquery.mask.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -40,7 +40,7 @@
         }, false);
     })();
     </script>
-    <script type="text/javascript">$("#telefone").mask("(00) 0000-00009");</script>
+    
 </head>
 
 <body>
@@ -95,7 +95,7 @@
                     <div class="col-md-4 mb-3">
                         <label for="telefone">Telefone</label>
                         <input type="text" class="form-control" id="telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"
-                            placeholder="(xx)x xxxx-xxxx" required>
+                            placeholder="(xx)x xxxx-xxxx" required> <script type="text/javascript">$("#telefone").mask("(00) 0000-00009");</script>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
