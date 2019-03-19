@@ -39,9 +39,17 @@
             });
         }, false);
     })();
+    $("#telefone").change(function() {
+        jQuery("input.telefone").mask("(99) 9999-9999");
+        if($("#telefone").val.length>14){
+            jQuery("input.telefone").mask("(99) #9999-9999");
+        }else{
+            jQuery("input.telefone").mask("(99) 9999-9999");
+        };
 
-    jQuery("input.telefone")
-        .mask("(99) #9999-9999");
+       
+    });
+    
     </script>
 
 
