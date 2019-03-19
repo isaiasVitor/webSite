@@ -12,7 +12,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script type='text/javascript' src='//code.jquery.com/jquery-compat-git.js'></script>
+    <script type='text/javascript' src='//igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js'></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -40,20 +41,16 @@
         }, false);
     })();
 
-    jQuery("input.telefone")
-        .mask("(99) 9999-9999?9")
-        .focusout(function (event) {  
-            var target, phone, element;  
-            target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
-            phone = target.value.replace(/\D/g, '');
-            element = $(target);  
-            element.unmask();  
-            if(phone.length > 10) {  
-                element.mask("(99) 99999-999?9");  
-            } else {  
-                element.mask("(99) 9999-9999?9");  
-            }  
-        });
+    var behavior = function (val) {
+    return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+},
+options = {
+    onKeyPress: function (val, e, field, options) {
+        field.mask(behavior.apply({}, arguments), options);
+    }
+};
+
+$('.phone').mask(behavior, options);
     </script>
 
 
