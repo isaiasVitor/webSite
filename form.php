@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    
+
     <script type="text/javascript" src="jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,20 @@
         }, false);
     })();
     </script>
-    
+
+    <script type="text/javascript">
+    var SPMaskBehavior = function(val) {
+            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        spOptions = {
+            onKeyPress: function(val, e, field, options) {
+                field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };
+
+    $('.sp_celphones').mask(SPMaskBehavior, spOptions);
+    </script>
+
 </head>
 
 <body>
@@ -94,8 +107,8 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control" id="telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"
-                            placeholder="(xx)x xxxx-xxxx" required> <script type="text/javascript">$("#telefone").mask("(00) 0000-00009");</script>
+                        <input type="text" class="form-control" id="telefone"
+                            pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="(xx)x xxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
