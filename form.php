@@ -82,7 +82,7 @@
         </div>
     </nav>
     <div class="container">
-        <div class="justify-content-center">
+        <div class="align-content-center">
             <div class="card">
                 <div class="card-header">
                     <p class="lead">Cadastro de pessoas para as aulas do Discipulado</p>
