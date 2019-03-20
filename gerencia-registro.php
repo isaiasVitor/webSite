@@ -1,5 +1,4 @@
-<?PHP
-    
+<?PHP header("Content-Type: text/html; charset=ISO-8859-1",true);
     #dados para a conexão com o banco de dados;
     $servidor = 'localhost'; #ip do servidor
     $usuario = 'isaias';          #Usuario para acessar o banco
@@ -32,6 +31,5 @@
     
         $conn->close();
   
-    
-
 ?>
+
