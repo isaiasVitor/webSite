@@ -112,7 +112,7 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="telefoneCelular">Telefone Celular</label>
-                        <input type="tel" class="form-control telefoneCelular" name="telefone-celular"
+                        <input type="tel" class="form-control telefoneCelular" name="telefone_celular"
                             id="telefoneCelular" placeholder="(xx) xxxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.

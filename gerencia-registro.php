@@ -17,7 +17,7 @@
         $sql = "INSERT INTO ALUNOS (NOME,TELEFONE_FIXO,TELEFONE_CELULAR,CONGREGACAO) VALUES (";
         $sql .= "'".$_REQUEST["nome"]."', ";
         $sql .= "'".$_REQUEST["telefone_fixo"]."', ";
-        $sql .= "'".$_REQUEST["telefone-celular"]."', ";
+        $sql .= "'".$_REQUEST["telefone_celular"]."', ";
         $sql .= "'".$_REQUEST["congregacao"]."', ";
         $sql .= ")";
 
@@ -34,5 +34,5 @@
         }
   
     }
-    
+
 ?>
