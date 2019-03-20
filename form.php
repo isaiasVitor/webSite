@@ -99,7 +99,7 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="telefoneFixo">Telefone Fixo</label>
-                        <input type="text" class="form-control telefoneFixo" name="telefoneFixo" id="telefoneFixo"
+                        <input type="tel" class="form-control telefoneFixo" name="telefoneFixo" id="telefoneFixo"
                             placeholder="(xx) xxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
@@ -109,7 +109,7 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="telefoneCelular">Telefone Celular</label>
-                        <input type="text" class="form-control telefoneCelular" name="telefoneCelular"
+                        <input type="tel" class="form-control telefoneCelular" name="telefoneCelular"
                             id="telefoneCelular" placeholder="(xx) xxxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
