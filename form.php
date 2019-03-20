@@ -130,20 +130,8 @@
                         <div class="invalid-feedback">Selecione A Congregação</div>
                     </div>
                 </div>
-
-                <div class="form-group">
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                            Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                            You must agree before submitting.
-                        </div>
-                    </div>
-                </div>
-                <button class="btn btn-primary" type="submit">Submit form</button>
+                <button class="btn btn-primary" type="submit">Salvar</button>
+                <button class="btn btn-primary" type="reset">Reset</button>
             </form>
         </div>
     </div>
