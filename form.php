@@ -130,8 +130,8 @@
                         <div class="invalid-feedback">Selecione A Congregação</div>
                     </div>
                 </div>
-                <button class="btn btn-primary block" type="submit">Salvar</button>
-                <button class="btn btn-primary block" type="reset">Limpar</button>
+                <button class="btn btn-primary btn-lg" type="submit">Salvar</button>
+                <button class="btn btn-primary btn-lg" type="reset">Limpar</button>
             </form>
         </div>
     </div>
