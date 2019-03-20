@@ -1,5 +1,8 @@
 <?PHP 
-    header('Content-type: text/html; charset=ISO-8859-1');
+    mb_internal_encoding("UTF-8"); 
+    mb_http_output( "iso-8859-1" );  
+    ob_start("mb_output_handler");   
+    header("Content-Type: text/html; charset=ISO-8859-1",true);
     #dados para a conexão com o banco de dados;
     $servidor = 'localhost'; #ip do servidor
     $usuario = 'isaias';          #Usuario para acessar o banco
