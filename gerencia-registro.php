@@ -20,8 +20,6 @@
     if($_REQUEST["acao"] == "adicionar"){
         #FAZENDO O INSERT
 
-        echo json_encode($_REQUEST);
-
 
 
 
@@ -34,6 +32,9 @@
 
          if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
+            
+            echo json_encode($_REQUEST);
+
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
