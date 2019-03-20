@@ -68,7 +68,7 @@
                         Discipulado
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Cadastrar aluno</a>
+                        <a class="dropdown-item" href="form.php">Cadastrar aluno</a>
                         <a class="dropdown-item" href="#">Registrar Presenças</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Apurar Resultados</a>
