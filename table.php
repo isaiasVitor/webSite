@@ -46,7 +46,7 @@
                         <a class="dropdown-item" href="form.php">Cadastrar aluno</a>
                         <a class="dropdown-item" href="#">Registrar Presenças</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="lista.php">Apurar Resultados</a>
+                        <a class="dropdown-item" href="table.php">Apurar Resultados</a>
                         <a class="dropdown-item" href="#">Exportar Planilha</a>
 
                     </div>
@@ -78,21 +78,21 @@
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td >Isaias Silva</td>
-                            <td >(16) 99750-5196</td>
-                            <td >Sede</td>
+                            <td>Isaias Silva</td>
+                            <td>(16) 99750-5196</td>
+                            <td>Sede</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td >Marcos Silva</td>
-                            <td >(16) 99750-5196</td>
-                            <td >Sede</td>
+                            <td>Marcos Silva</td>
+                            <td>(16) 99750-5196</td>
+                            <td>Sede</td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td >Maria Joaquina Texeira</td>
-                            <td >(16) 3333-2839</td>
-                            <td >Jd. Portugal</td>
+                            <td>Maria Joaquina Texeira</td>
+                            <td>(16) 3333-2839</td>
+                            <td>Jd. Portugal</td>
                         </tr>
                     </tbody>
                 </table>

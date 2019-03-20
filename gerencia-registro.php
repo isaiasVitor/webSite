@@ -19,6 +19,12 @@
     #verifica se o arquivo foi chamado a partir de um formulário;
     if($_REQUEST["acao"] == "adicionar"){
         #FAZENDO O INSERT
+
+        echo json_encode($_REQUEST);
+
+
+
+
         $sql = "INSERT INTO alunos (nome, telefone_fixo, telefone_celular, congregacao) VALUES (";
         $sql .= "'".$_REQUEST["nome"]."', ";
         $sql .= "'".$_REQUEST["telefone_fixo"]."', ";

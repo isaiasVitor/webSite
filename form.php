@@ -8,7 +8,7 @@
 <html>
 
 <head>
-   
+
     <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -76,7 +76,7 @@
                         <a class="dropdown-item" href="form.php">Cadastrar aluno</a>
                         <a class="dropdown-item" href="#">Registrar Presenças</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="lista.php">Apurar Resultados</a>
+                        <a class="dropdown-item" href="table.php">Apurar Resultados</a>
                         <a class="dropdown-item" href="#">Exportar Planilha</a>
 
                     </div>
@@ -149,5 +149,5 @@
         </div>
     </div>
 </body>
-   
+
 </html>
