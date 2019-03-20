@@ -36,13 +36,13 @@
             $sql .= ");";
     
              if ($conn->query($sql) === TRUE) {
-                echo 'Sucesss';
+                header('Location: form.php');
                
             } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
+                echo "Erro: " . $sql . "<br>" . $conn->error;
             }
         }else{
-            echo 'error';
+            echo 'Falta o nome e/ou a congregacao...';
         }
 
       
