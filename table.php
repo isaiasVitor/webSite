@@ -35,9 +35,9 @@
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Telefone</th>
-                            <th scope="col">Congregação</th>
+                            <th scope="col-2">Nome</th>
+                            <th scope="col-2">Telefone</th>
+                            <th scope="col-2">Congregação</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -56,7 +56,7 @@
                         <tr>
                             <th scope="row">3</th>
                             <td>Maria Joaquina Texeira</td>
-                            <td>(16)3333-2839</td>
+                            <td>(16) 3333-2839</td>
                             <td>Jd. Portugal</td>
                         </tr>
                     </tbody>
