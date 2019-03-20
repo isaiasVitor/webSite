@@ -84,7 +84,7 @@
     </nav>
     <div class="card">
         <div class="card-header">
-            Cadastro de pessoas para as aulas do Discipulado
+            <p class="lead">Cadastro de pessoas para as aulas do Discipulado</p>
         </div>
         <div class="card-body">
             <form class="needs-validation" novalidate style="padding:10px;">
