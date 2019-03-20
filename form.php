@@ -40,20 +40,9 @@
         }, false);
     })();
 
-    jQuery("input.telefone")
-        .mask("(99) 9999-99999")
-        .focusout(function (event) {  
-            var target, phone, element;  
-            target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
-            phone = target.value.replace(/\D/g, '');
-            element = $(target);  
-            element.unmask();  
-            if(phone.length > 10) {  
-                element.mask("(99) 99999-9999");  
-            } else {  
-                element.mask("(99) 9999-99999");  
-            }  
-        });
+    jQuery('input.telefoneFixo').mask('(16) 9999-9999');
+    jQuery('input.telefoneCelular').mask('(16) 9 9999-9999');
+
     </script>
 
 
@@ -109,8 +98,18 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
-                        <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control telefone" name="telefone" id="telefone"
+                        <label for="telefoneFixo">Telefone Fixo</label>
+                        <input type="text" class="form-control telefoneFixo" name="telefoneFixo" id="telefoneFixo"
+                            placeholder="(xx) xxxx-xxxx" required>
+                        <div class="invalid-feedback">
+                            Por favor digite um telefone valido.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="telefoneCelular">Telefone Celular</label>
+                        <input type="text" class="form-control telefoneCelular" name="telefoneCelular" id="telefoneCelular"
                             placeholder="(xx) xxxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
@@ -129,7 +128,6 @@
                         </select>
                     </div>
                 </div>
-
 
                 <div class="form-group">
 
