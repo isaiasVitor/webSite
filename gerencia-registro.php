@@ -12,7 +12,7 @@
     if ($conn->connect_error) {
         die("conexão falhou: " . $conn->connect_error);
     } 
-    echo($_REQUEST);
+    echo json_encode($_REQUEST);
     /*
     #verifica se o arquivo foi chamado a partir de um formulário
     if($_REQUEST["acao"] == "adicionar"){
