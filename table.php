@@ -46,7 +46,7 @@
                         <a class="dropdown-item" href="form.php">Cadastrar aluno</a>
                         <a class="dropdown-item" href="#">Registrar Presenças</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Apurar Resultados</a>
+                        <a class="dropdown-item" href="lista.php">Apurar Resultados</a>
                         <a class="dropdown-item" href="#">Exportar Planilha</a>
 
                     </div>
