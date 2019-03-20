@@ -119,13 +119,14 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="congregação">Selecione a Congregação</label>
-                        <select class="custom-select my-1 mr-sm-2" id="congregação">
+                        <select class="custom-select my-1 mr-sm-2" id="congregacao">
                             <option selected>Choose...</option>
                             <option value="Sede">Sede</option>
                             <option value="Pq. São Paulo">Pq. São Paulo</option>
                             <option value="Jd. Europa">Jd. Europa</option>
                             <option value="Jd. Portugal">Jd. Portugal</option>
                         </select>
+                        <div class="invalid-feedback">Selecione A Congregação</div>
                     </div>
                 </div>
 
