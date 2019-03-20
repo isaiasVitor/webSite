@@ -5,6 +5,8 @@
  ob_start("mb_output_handler");   
  header("Content-Type: text/html; charset=ISO-8859-1",true);
 ?>
+
+<!DOCTYPE html>
 <html>
 
 <head>
