@@ -130,12 +130,9 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <button class="btn btn-primary btn-lg btn-block" type="reset">Limpar</button>
-                    </div>
+                <p><a href="#" class="btn btn-primary my-2" type="submit">Salvar</a>
+                       <a href="#" class="btn btn-primary my-2" type="reset">limpar</a>
+                    </p>
                 </div>
             </form>
         </div>
