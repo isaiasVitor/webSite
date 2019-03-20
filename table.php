@@ -79,7 +79,7 @@
                         <tr>
                             <th scope="row">1</th>
                             <td >Isaias Silva</td>
-                            <td >(16) 99750-5196</td>
+                            <td colspan="2">(16) 99750-5196</td>
                             <td >Sede</td>
                         </tr>
                         <tr>
