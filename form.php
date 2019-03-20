@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
     <title>EXEMPLO - Formulário</title>
     <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -43,7 +43,6 @@
 
     jQuery('input.telefoneFixo').mask('(16) 9999-9999');
     jQuery('input.telefoneCelular').mask('(16) 9 9999-9999');
-
     </script>
 
 
@@ -110,8 +109,8 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="telefoneCelular">Telefone Celular</label>
-                        <input type="text" class="form-control telefoneCelular" name="telefoneCelular" id="telefoneCelular"
-                            placeholder="(xx) xxxxx-xxxx" required>
+                        <input type="text" class="form-control telefoneCelular" name="telefoneCelular"
+                            id="telefoneCelular" placeholder="(xx) xxxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
@@ -130,8 +129,14 @@
                         <div class="invalid-feedback">Selecione a Congregação</div>
                     </div>
                 </div>
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>
-                <button class="btn btn-primary btn-lg btn-block" type="reset">Limpar</button>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-lg btn-block" type="reset">Limpar</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
