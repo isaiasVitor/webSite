@@ -87,7 +87,7 @@
             <p class="lead">Cadastro de pessoas para as aulas do Discipulado</p>
         </div>
         <div class="card-body">
-            <form class="needs-validation formdetail" novalidate style="padding:10px;">
+            <form class="needs-validation formdetail" novalidate">
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="name">Nome Completo</label>
