@@ -36,8 +36,42 @@
             $sql .= ");";
     
              if ($conn->query($sql) === TRUE) {
-                
-                echo $conn->insert_id;
+ ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <? echo $conn->insert_id ?>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
+<?               
+                //header('Location: form.php');
                
             } else {
                 echo "Erro: " . $sql . "<br>" . $conn->error;
@@ -52,4 +86,3 @@
         $conn->close();
   
 ?>
-
