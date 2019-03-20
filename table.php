@@ -71,7 +71,7 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Nome</th>
-                            <th colspan="2" scope="col">Telefone</th>
+                            <th scope="col">Telefone</th>
                             <th scope="col">Congregação</th>
                         </tr>
                     </thead>
@@ -79,19 +79,19 @@
                         <tr>
                             <th scope="row">1</th>
                             <td >Isaias Silva</td>
-                            <td colspan="2">(16) 99750-5196</td>
+                            <td >(16) 99750-5196</td>
                             <td >Sede</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td >Marcos Silva</td>
-                            <td colspan="2" >(16) 99750-5196</td>
+                            <td >(16) 99750-5196</td>
                             <td >Sede</td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td >Maria Joaquina Texeira</td>
-                            <td colspan="2">(16) 3333-2839</td>
+                            <td >(16) 3333-2839</td>
                             <td >Jd. Portugal</td>
                         </tr>
                     </tbody>

@@ -87,11 +87,13 @@
             <p class="lead">Cadastro de pessoas para as aulas do Discipulado</p>
         </div>
         <div class="card-body">
-            <form class="needs-validation formdetail" novalidate">
+            <form class="needs-validation formdetail" novalidate method="POST"
+                action="gerencia-registro.php?acao=adicionar">
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
-                        <label for="name">Nome Completo</label>
-                        <input type="text" class="form-control" id="name" placeholder="Nome Completo" required>
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome Completo"
+                            required>
                         <div class="invalid-feedback">
                             Por favor digite um nome valido
                         </div>
@@ -100,7 +102,7 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="telefoneFixo">Telefone Fixo</label>
-                        <input type="tel" class="form-control telefoneFixo" name="telefoneFixo" id="telefoneFixo"
+                        <input type="tel" class="form-control telefoneFixo" name="telefone_fixo" id="telefoneFixo"
                             placeholder="(xx) xxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
@@ -110,7 +112,7 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="telefoneCelular">Telefone Celular</label>
-                        <input type="tel" class="form-control telefoneCelular" name="telefoneCelular"
+                        <input type="tel" class="form-control telefoneCelular" name="telefone-celular"
                             id="telefoneCelular" placeholder="(xx) xxxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
@@ -120,7 +122,7 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="congregação">Selecione a Congregação</label>
-                        <select class="custom-select my-1 mr-sm-2" id="congregacao">
+                        <select class="custom-select my-1 mr-sm-2" name="congregacao" id="congregacao">
                             <option selected>Escolha...</option>
                             <option value="Sede">Sede</option>
                             <option value="Pq. São Paulo">Pq. São Paulo</option>
