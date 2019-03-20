@@ -16,31 +16,38 @@
         die("conexão falhou: " . $conn->connect_error);
     } 
    
-    echo json_encode($_REQUEST);
-
-    /*
+  
+    
     #verifica se o arquivo foi chamado a partir de um formulário;
     if($_REQUEST["acao"] == "adicionar"){
         #FAZENDO O INSERT
 
+        $nome = $_REQUEST["nome"];
+        $telefone_fixo = $_REQUEST["telefone_fixo"];
+        $telefone_celular = $_REQUEST["telefone_celular"];
+        $congregacao = $_REQUEST["congregacao"];
 
-
-
-        $sql = "INSERT INTO alunos (nome, telefone_fixo, telefone_celular, congregacao) VALUES (";
-        $sql .= "'".$_REQUEST["nome"]."', ";
-        $sql .= "'".$_REQUEST["telefone_fixo"]."', ";
-        $sql .= "'".$_REQUEST["telefone_celular"]."', ";
-        $sql .= "'".$_REQUEST["congregacao"]."'";
-        $sql .= ");";
-
-         if ($conn->query($sql) === TRUE) {
-
-           
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+        if(isset($nome) && isset($congregacao)){
+            $sql = "INSERT INTO alunos (nome, telefone_fixo, telefone_celular, congregacao) VALUES (";
+            $sql .= "'".$_REQUEST["nome"]."', ";
+            $sql .= "'".$_REQUEST["telefone_fixo"]."', ";
+            $sql .= "'".$_REQUEST["telefone_celular"]."', ";
+            $sql .= "'".$_REQUEST["congregacao"]."'";
+            $sql .= ");";
+    
+             if ($conn->query($sql) === TRUE) {
+                echo 'Sucesss';
+               
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+        }else{
+            echo 'error';
         }
+
+      
     }
-    */
+    
         $conn->close();
   
 ?>
