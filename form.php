@@ -1,5 +1,5 @@
 <?php
- ini_set('default_charset','UTF-8');
+ ini_set('default_charset','ISO-8859-1');
 ?>
 <html>
 
