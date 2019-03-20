@@ -1,4 +1,5 @@
 <?PHP
+
     #dados para a conexão com o banco de dados
     $servidor = '18.228.137.119'; #ip do servidor
     $usuario = 'isaias';          #Usuario para acessar o banco
@@ -34,5 +35,5 @@
         }
   
     }
-
+    echo 'oi'
 ?>
