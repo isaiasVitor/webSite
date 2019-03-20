@@ -16,6 +16,9 @@
         die("conexão falhou: " . $conn->connect_error);
     } 
    
+    echo json_encode($_REQUEST);
+
+    /*
     #verifica se o arquivo foi chamado a partir de um formulário;
     if($_REQUEST["acao"] == "adicionar"){
         #FAZENDO O INSERT
@@ -31,13 +34,13 @@
         $sql .= ");";
 
          if ($conn->query($sql) === TRUE) {
-            $var =  json_encode($_REQUEST);
-            echo $var;
+
+           
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
     }
-    
+    */
         $conn->close();
   
 ?>
