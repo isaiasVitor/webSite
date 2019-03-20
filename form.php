@@ -130,10 +130,10 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-2 mb-3">
                         <button class="btn btn-primary btn-block" type="submit">Salvar</button>
                     </div>
-                    <div class="col-md-4 mb-3" >
+                    <div class="col-md-2 mb-3" >
                         <button class="btn btn-danger btn-block" type="reset">Limpar</button>
                     </div>
                 </div>
