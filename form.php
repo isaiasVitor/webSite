@@ -81,67 +81,73 @@
 
         </div>
     </nav>
-    <div class="card">
-        <div class="card-header">
-            <p class="lead">Cadastro de pessoas para as aulas do Discipulado</p>
-        </div>
-        <div class="card-body">
-            <form class="needs-validation" novalidate style="padding:10px;">
-                <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                        <label for="name">Nome Completo</label>
-                        <input type="text" class="form-control" id="name" placeholder="Nome Completo" required>
-                        <div class="invalid-feedback">
-                            Por favor digite um nome valido
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col order-first"></div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <p class="lead">Cadastro de pessoas para as aulas do Discipulado</p>
+                    </div>
+                    <div class="card-body">
+                        <form class="needs-validation" novalidate style="padding:10px;">
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="name">Nome Completo</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Nome Completo"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Por favor digite um nome valido
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="telefoneFixo">Telefone Fixo</label>
+                                    <input type="tel" class="form-control telefoneFixo" name="telefoneFixo"
+                                        id="telefoneFixo" placeholder="(xx) xxxx-xxxx" required>
+                                    <div class="invalid-feedback">
+                                        Por favor digite um telefone valido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="telefoneCelular">Telefone Celular</label>
+                                    <input type="tel" class="form-control telefoneCelular" name="telefoneCelular"
+                                        id="telefoneCelular" placeholder="(xx) xxxxx-xxxx" required>
+                                    <div class="invalid-feedback">
+                                        Por favor digite um telefone valido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="congregação">Selecione a Congregação</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="congregacao">
+                                        <option selected>Escolha...</option>
+                                        <option value="Sede">Sede</option>
+                                        <option value="Pq. São Paulo">Pq. São Paulo</option>
+                                        <option value="Jd. Europa">Jd. Europa</option>
+                                        <option value="Jd. Portugal">Jd. Portugal</option>
+                                    </select>
+                                    <div class="invalid-feedback">Selecione a Congregação</div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-2 mb-3">
+                                    <button class="btn btn-primary btn-block" type="submit">Salvar</button>
+                                </div>
+                                <div class="col-md-2 mb-3">
+                                    <button class="btn btn-danger btn-block" type="reset">Limpar</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                        <label for="telefoneFixo">Telefone Fixo</label>
-                        <input type="tel" class="form-control telefoneFixo" name="telefoneFixo" id="telefoneFixo"
-                            placeholder="(xx) xxxx-xxxx" required>
-                        <div class="invalid-feedback">
-                            Por favor digite um telefone valido.
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                        <label for="telefoneCelular">Telefone Celular</label>
-                        <input type="tel" class="form-control telefoneCelular" name="telefoneCelular"
-                            id="telefoneCelular" placeholder="(xx) xxxxx-xxxx" required>
-                        <div class="invalid-feedback">
-                            Por favor digite um telefone valido.
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                        <label for="congregação">Selecione a Congregação</label>
-                        <select class="custom-select my-1 mr-sm-2" id="congregacao">
-                            <option selected>Escolha...</option>
-                            <option value="Sede">Sede</option>
-                            <option value="Pq. São Paulo">Pq. São Paulo</option>
-                            <option value="Jd. Europa">Jd. Europa</option>
-                            <option value="Jd. Portugal">Jd. Portugal</option>
-                        </select>
-                        <div class="invalid-feedback">Selecione a Congregação</div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-2 mb-3">
-                        <button class="btn btn-primary btn-block" type="submit">Salvar</button>
-                    </div>
-                    <div class="col-md-2 mb-3" >
-                        <button class="btn btn-danger btn-block" type="reset">Limpar</button>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
