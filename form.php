@@ -133,7 +133,7 @@
                     <div class="col-md-4 mb-3">
                         <button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>
                     </div>
-                    <div>
+                    <div class="col-md-4 mb-3">
                         <button class="btn btn-primary btn-lg btn-block" type="reset">Limpar</button>
                     </div>
                 </div>
