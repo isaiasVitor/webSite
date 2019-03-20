@@ -60,7 +60,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -83,7 +83,7 @@
     </nav>
     <div class="card">
         <div class="card-header">
-            Formulario de cadastro para Discipulado ADBA
+            Formulario de cadastro para as aulas do Discipulado
         </div>
         <div class="card-body">
             <form class="needs-validation" novalidate style="padding:10px;">
