@@ -78,9 +78,9 @@
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>Isaias Silva</td>
-                            <td>(16) 99750-5196</td>
-                            <td>Sede</td>
+                            <td colspan="2">Isaias Silva</td>
+                            <td colspan="2">(16) 99750-5196</td>
+                            <td colspan="2">Sede</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
