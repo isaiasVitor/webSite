@@ -48,7 +48,7 @@
 
 </head>
 
-<body class="text-center">
+<body >
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">ADBA</a>
@@ -84,7 +84,7 @@
     <div class="container">
         <div class="align-content-center">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header text-center">
                     <p class="lead">Cadastro de pessoas para as aulas do Discipulado</p>
                 </div>
                 <div class="card-body">
