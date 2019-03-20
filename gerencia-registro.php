@@ -31,8 +31,8 @@
         $sql .= ");";
 
          if ($conn->query($sql) === TRUE) {
-            echo json_encode($_REQUEST);
-
+            $var =  json_encode($_REQUEST);
+            echo $var;
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
