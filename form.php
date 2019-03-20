@@ -11,7 +11,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
     <meta charset="UTF-8">
@@ -41,23 +40,20 @@
         }, false);
     })();
 
-    jQuery(function($) {
-	$.mask.definitions['~']='[+-]';
-	//Inicio Mascara Telefone
-	$('input[type=tel]').focusout(function(){
-		var phone, element;
-		element = $(this);
-		element.unmask();
-		phone = element.val().replace(/\D/g, '');
-		if(phone.length > 10) {
-			element.mask("(99) 99999-999?9");
-		} else {
-			element.mask("(99) 9999-9999?9");
-		}
-	}).trigger('focusout');
-	//Fim Mascara Telefone
-	
-});
+    jQuery("input.telefone")
+        .mask("(99) 9999-99999")
+        .focusout(function (event) {  
+            var target, phone, element;  
+            target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
+            phone = target.value.replace(/\D/g, '');
+            element = $(target);  
+            element.unmask();  
+            if(phone.length > 10) {  
+                element.mask("(99) 99999-9999");  
+            } else {  
+                element.mask("(99) 9999-99999");  
+            }  
+        });
     </script>
 
 
@@ -114,7 +110,7 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="telefone">Telefone</label>
-                        <input type="tel" class="form-control telefone" name="telefone" id="telefone"
+                        <input type="text" class="form-control telefone" name="telefone" id="telefone"
                             placeholder="(xx) xxxxx-xxxx" required>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
