@@ -41,8 +41,8 @@
         }, false);
     })();
 
-    jQuery('input.telefoneFixo').mask('(16) 9999-9999');
-    jQuery('input.telefoneCelular').mask('(16) 9 9999-9999');
+    jQuery('input.telefoneFixo').mask('(99) 9999-9999');
+    jQuery('input.telefoneCelular').mask('(99) 9 9999-9999');
     </script>
 
 
