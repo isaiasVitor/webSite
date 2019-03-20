@@ -36,7 +36,8 @@
             $sql .= ");";
     
              if ($conn->query($sql) === TRUE) {
-                header('Location: form.php');
+                
+                echo $conn->insert_id;
                
             } else {
                 echo "Erro: " . $sql . "<br>" . $conn->error;
