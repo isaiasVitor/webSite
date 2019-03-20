@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  
+    <link rel="stylesheet" type="text/css" href="css/form.css">
     <title>EXEMPLO - lista</title>
 </head>
 
@@ -70,9 +70,9 @@
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col-2">Nome</th>
-                            <th scope="col-2">Telefone</th>
-                            <th scope="col-2">Congregação</th>
+                            <th colspan="2" scope="col">Nome</th>
+                            <th colspan="2" scope="col">Telefone</th>
+                            <th colspan="2" scope="col">Congregação</th>
                         </tr>
                     </thead>
                     <tbody>
