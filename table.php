@@ -55,8 +55,13 @@
 
         </div>
     </nav>
-   
-             <table class="table">
+    <div class="card">
+        <div class="card-header">
+            <p class="lead">Cadastro de pessoas para as aulas do Discipulado</p>
+        </div>
+        <div class="card-body">
+        <div class="table-responsive">
+            <table class="table">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -86,7 +91,9 @@
                     </tr>
                 </tbody>
             </table>
-
+        </div>
+        </div>
+    </div>
 </body>
 
 </html>
