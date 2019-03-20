@@ -132,7 +132,7 @@
                     <div class="col-md-4 mb-3">
                         <label for="congregacao">Selecione a Congregação</label>
                         <select class="custom-select my-1 mr-sm-2" name="congregacao" id="congregacao" required>
-                            <option selected>Escolha...</option>
+                            <option selected value="">Escolha...</option>
                             <option value="Sede">Sede</option>
                             <option value="Pq. São Paulo">Pq. São Paulo</option>
                             <option value="Jd. Europa">Jd. Europa</option>
