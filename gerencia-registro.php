@@ -20,7 +20,7 @@
         $sql .= "'".$_REQUEST["nome"]."', ";
         $sql .= "'".$_REQUEST["telefone_fixo"]."', ";
         $sql .= "'".$_REQUEST["telefone_celular"]."', ";
-        $sql .= "'".$_REQUEST["congregacao"]."', ";
+        $sql .= "'".$_REQUEST["congregacao"]."'";
         $sql .= ");";
 
          if ($conn->query($sql) === TRUE) {
