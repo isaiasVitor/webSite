@@ -1,7 +1,7 @@
 <?PHP
     
     #dados para a conexão com o banco de dados
-    $servidor = '18.228.137.119'; #ip do servidor
+    $servidor = 'localhost'; #ip do servidor
     $usuario = 'isaias';          #Usuario para acessar o banco
     $senha = 'kyzasd39XZ#@';      #Senha do banco
     $banco = 'adbadb';            #nome do database
