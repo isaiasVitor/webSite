@@ -33,7 +33,7 @@
         }
     */    
         $conn->close();
-    
+        echo 'true';
     
 
 ?>
