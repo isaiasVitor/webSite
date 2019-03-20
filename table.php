@@ -85,13 +85,13 @@
                         <tr>
                             <th scope="row">2</th>
                             <td >Marcos Silva</td>
-                            <td >(16) 99750-5196</td>
+                            <td colspan="2" >(16) 99750-5196</td>
                             <td >Sede</td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td >Maria Joaquina Texeira</td>
-                            <td >(16) 3333-2839</td>
+                            <td colspan="2">(16) 3333-2839</td>
                             <td >Jd. Portugal</td>
                         </tr>
                     </tbody>
