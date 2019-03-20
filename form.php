@@ -83,7 +83,7 @@
     </nav>
     <div class="card">
         <div class="card-header">
-            Formulario de cadastro para as aulas do Discipulado
+            Cadastro de pessoas para as aulas do Discipulado
         </div>
         <div class="card-body">
             <form class="needs-validation" novalidate style="padding:10px;">
