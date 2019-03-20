@@ -31,8 +31,7 @@
 
 <body class="text-center">
     <form class="form-signin">
-        <img class="mb-4" src="https://scontent.faqa3-1.fna.fbcdn.net/v/t1.0-9/18698034_1866444240284077_1650484403571742320_n.jpg?_nc_cat=104&_nc_ht=scontent.faqa3-1.fna&oh=5755c5a54b89848478f6cb77fc2c400a&oe=5D4C2898" alt="" width="72"
-            height="72">
+        <img class="rounded-circle" src="https://scontent.faqa3-1.fna.fbcdn.net/v/t1.0-9/18698034_1866444240284077_1650484403571742320_n.jpg?_nc_cat=104&_nc_ht=scontent.faqa3-1.fna&oh=5755c5a54b89848478f6cb77fc2c400a&oe=5D4C2898" alt="" >
         <h1 class="h3 mb-3 font-weight-normal">Faça seu Acesso</h1>
         <label for="inputUsuario" class="sr-only">Usuario</label>
         <input type="text" id="inputUsuario" class="form-control" placeholder="Usuario" required autofocus>
