@@ -112,7 +112,7 @@
                     <div class="col-md-4 mb-3">
                         <label for="telefoneFixo">Telefone Fixo</label>
                         <input type="tel" class="form-control telefoneFixo" name="telefone_fixo" id="telefoneFixo"
-                            placeholder="(xx) xxxx-xxxx" >
+                            placeholder="(xx) xxxx-xxxx">
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
@@ -122,7 +122,7 @@
                     <div class="col-md-4 mb-3">
                         <label for="telefoneCelular">Telefone Celular</label>
                         <input type="tel" class="form-control telefoneCelular" name="telefone_celular"
-                            id="telefoneCelular" placeholder="(xx) xxxxx-xxxx" >
+                            id="telefoneCelular" placeholder="(xx) xxxxx-xxxx">
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
@@ -152,6 +152,19 @@
             </form>
         </div>
     </div>
+
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#exampleModalCenter').modal('show');
+    });
+    </script>
+
+    <?php if(isset($_REQUEST["idApostila"])){ ?>
+        oi
+    <?php } ?>
+
+
 </body>
 
 </html>
