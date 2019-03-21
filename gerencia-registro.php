@@ -67,7 +67,7 @@
     </script>
 </head>
 
-<body>
+<body onload=" $('#bd-example-modal-sm').modal('show');">
 
     </div><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small
         modal</button>
