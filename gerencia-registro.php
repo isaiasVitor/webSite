@@ -61,7 +61,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
-        $('#bd-example-modal-sm').modal('show')
+    $( document ).ready(function() {
+        $('.bd-example-modal-sm').modal('show');
+    });
+ 
     </script>
 </head>
 
