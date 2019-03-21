@@ -57,8 +57,10 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-    $(function() {
-        $('#exampleModalCente').modal('show');
+    $(document).ready(function() {
+        $("button").click(function() {
+            $("p").hide();
+        });
     });
     </script>
     <meta charset="utf-8">
@@ -75,7 +77,7 @@
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
         Launch demo modal
     </button>
-
+    <p> oi </p>
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
