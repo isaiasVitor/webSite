@@ -57,7 +57,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="JS/jquery-3.3.1.min.js"></script>
     <script>
     $(document).ready(function() {
         $('#exampleModalCenter').modal('show');
@@ -67,15 +67,6 @@
 </head>
 
 <body>
-
-
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Launch demo modal
-    </button>
-    <p> oi </p>
-    <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -91,7 +82,6 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-
                 </div>
             </div>
         </div>
@@ -100,18 +90,15 @@
 
 </html>
 <?PHP              
-                //header('Location: form.php');
+                header('Location: form.php');
                
             } else {
                 echo "Erro: " . $sql . "<br>" . $conn->error;
             }
         }else{
             echo 'Falta o nome e/ou a congregacao...';
-        }
-
-      
+        } 
     }
-    
         $conn->close();
   
 ?>
