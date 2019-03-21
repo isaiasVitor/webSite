@@ -59,7 +59,7 @@
     <script type="text/javascript" src="jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
     <script>
     $(function() {
-        $('#bd-example-modal-sm').modal('show');
+        $('#exampleModalCenter').modal('show');
     });
     </script>
     <meta charset="utf-8">
@@ -91,8 +91,8 @@
                 <?PHP echo "Numero da apostila é: " . $conn->insert_id; ?>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
       </div>
     </div>
   </div>
