@@ -30,7 +30,7 @@
     </script>
     
     <script type="text/javascript" src="jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
-    <script>
+    <script type="text/javascript">
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function() {
         'use strict';
@@ -50,12 +50,14 @@
         }, false);
     })();
 
+
+    jQuery('input.telefoneFixo').mask('(99) 9999-9999');
+    console.log('jquery');
+    jQuery('input.telefoneCelular').mask('(99) 9 9999-9999');
     
     </script>
     
-    <script>
-    jQuery('input.telefoneFixo').mask('(99) 9999-9999');
-    jQuery('input.telefoneCelular').mask('(99) 9 9999-9999');</script>
+    
 
 
 </head>
