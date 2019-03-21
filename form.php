@@ -58,9 +58,7 @@
     <script>
     $(document).ready(function() {
         $('#exampleModalCenter').modal('show');
-        jQuery('input.telefoneFixo').mask('(99) 9999-9999');
-    console.log('jquery');
-    jQuery('input.telefoneCelular').mask('(99) 9 9999-9999');
+   
     
     });
     </script>
