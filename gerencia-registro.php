@@ -62,6 +62,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
     $( document ).ready(function() {
+        alert(ok);
         $('#bd-example-modal-sm').modal('show');
     });
  
