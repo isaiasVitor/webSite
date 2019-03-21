@@ -28,9 +28,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
-    <script >
+    <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function() {
         'use strict';
@@ -51,12 +51,8 @@
     })();
 
     jQuery('input.telefoneFixo').mask('(99) 9999-9999');
-    console.log('jquery');
     jQuery('input.telefoneCelular').mask('(99) 9 9999-9999');
-  
     </script>
-  
-    
 
 
 </head>
@@ -156,33 +152,6 @@
             </form>
         </div>
     </div>
-
-    <?php if(isset($_REQUEST["idApostila"])){ ?>
-       
-    
-
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Cadastro concluido</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <?PHP echo "Numero da apostila é: " . $_REQUEST["idApostila"];?>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <?php } ?>
-
 </body>
 
 </html>
