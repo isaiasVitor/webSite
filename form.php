@@ -28,8 +28,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <script src="JS/jquery-3.3.1.min.js"></script>
     
+    <script type="text/javascript" src="jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
     <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function() {
@@ -52,8 +52,9 @@
 
     
     </script>
-        <script type="text/javascript" src="jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
-    <script>jQuery('input.telefoneFixo').mask('(99) 9999-9999');
+    
+    <script>
+    jQuery('input.telefoneFixo').mask('(99) 9999-9999');
     jQuery('input.telefoneCelular').mask('(99) 9 9999-9999');</script>
 
 
