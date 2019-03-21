@@ -36,7 +36,8 @@
             $sql .= ");";
     
              if ($conn->query($sql) === TRUE) {
- ?>
+?>
+<!--
 <!DOCTYPE html>
 <html>
 
@@ -89,8 +90,9 @@
 </body>
 
 </html>
+-->
 <?PHP              
-                header('Location: form.php');
+                header('Location: form.php?idApostila='.$conn->insert_id);
                
             } else {
                 echo "Erro: " . $sql . "<br>" . $conn->error;
